@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
     <!-- NAVBAR -->
@@ -29,13 +33,22 @@
 
     <!-- HERO / BERANDA SECTION -->
     <section id="beranda" class="hero-section">
-        <div class="hero-content">
-            <span class="subtitle">FULLSTACK & MOBILE DEVELOPER</span>
-            <h1>BUILDING DIGITAL <br><span class="highlight">EXPERIENCES</span></h1>
-            <p>Fokus dalam pengembangan sistem backend scalable (Laravel), aplikasi mobile (Flutter), dan antarmuka web modern (React).</p>
-            <div class="hero-btns">
-                <a href="#proyek" class="btn btn-primary">LIHAT PROYEK &rarr;</a>
-                <a href="#kontak" class="btn btn-secondary">HUBUNGI SAYA</a>
+        <div class="hero-container">
+            <!-- Kolom Kiri: Teks -->
+            <div class="hero-content">
+                <span class="subtitle">FULLSTACK & MOBILE DEVELOPER</span>
+                <h1>BUILDING DIGITAL <br><span class="highlight">EXPERIENCES</span></h1>
+                <p>Fokus dalam pengembangan sistem backend scalable (Laravel), aplikasi mobile (Flutter), dan antarmuka
+                    web modern (React).</p>
+                <div class="hero-btns">
+                    <a href="#proyek" class="btn btn-primary">LIHAT PROYEK &rarr;</a>
+                    <a href="#kontak" class="btn btn-secondary">HUBUNGI SAYA</a>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Foto Kamu -->
+            <div class="hero-image">
+                <img src="assets/images/fotoku.jpg" alt="Sarif">
             </div>
         </div>
     </section>
@@ -43,43 +56,54 @@
     <!-- CARDS GALLERY (STYLE RONALDO) -->
     <section class="gallery-section">
         <div class="gallery-container">
+
+            <!-- CARD 1: BACKEND -->
             <div class="card-item" data-tech="Laravel & PHP">
-                <div class="card-img-placeholder">BACKEND</div>
+                <img src="assets/images/laravel.jpg" alt="Laravel & PHP" class="card-img">
                 <div class="card-info">
                     <h3>Laravel & PHP</h3>
                     <p>API & Database Architecture</p>
                 </div>
             </div>
+
+            <!-- CARD 2: MOBILE -->
             <div class="card-item" data-tech="Flutter">
-                <div class="card-img-placeholder">MOBILE</div>
+                <img src="assets/images/flutter.jpg" alt="Flutter" class="card-img">
                 <div class="card-info">
                     <h3>Flutter</h3>
                     <p>Cross-Platform Apps</p>
                 </div>
             </div>
+
+            <!-- CARD 3: FRONTEND -->
             <div class="card-item" data-tech="React.js">
-                <div class="card-img-placeholder">FRONTEND</div>
+                <img src="assets/images/react.jpg" alt="React.js" class="card-img">
                 <div class="card-info">
                     <h3>React.js</h3>
                     <p>Interactive UI / UX</p>
                 </div>
             </div>
+
+            <!-- CARD 4: PYTHON -->
             <div class="card-item" data-tech="Python">
-                <div class="card-img-placeholder">PYTHON</div>
+                <img src="assets/images/python.jpg" alt="Python" class="card-img">
                 <div class="card-info">
                     <h3>Data Processing</h3>
                     <p>Desktop & Automation</p>
                 </div>
             </div>
+
         </div>
     </section>
 
-   <!-- SEKSI PROFIL & RIWAYAT -->
+    <!-- SEKSI PROFIL & RIWAYAT -->
     <section id="profil" class="section-container">
         <h2 class="section-title">PROFIL & RIWAYAT</h2>
-        
+
         <div class="profil-text">
-            <p>Saya adalah seorang pengembang perangkat lunak berorientasi pada hasil dengan fokus di bidang Backend Engineering dan Mobile Development. Berpengalaman merancang sistem reservasi, kasir, hingga arsitektur API.</p>
+            <p>Saya adalah seorang pengembang perangkat lunak berorientasi pada hasil dengan fokus di bidang Backend
+                Engineering dan Mobile Development. Berpengalaman merancang sistem reservasi, kasir, hingga arsitektur
+                API.</p>
         </div>
 
         <div class="tech-tags">
@@ -123,7 +147,8 @@
                     <span class="timeline-date">Hospitality & Service Industry</span>
                     <h3>Steward & Daily Worker</h3>
                     <p class="timeline-role">Sofitel Bali & Beach Club</p>
-                    <p>Pengalaman kerja operasional harian yang mengasah kedisiplinan, kerja sama tim, dan manajemen waktu di lingkungan profesional.</p>
+                    <p>Pengalaman kerja operasional harian yang mengasah kedisiplinan, kerja sama tim, dan manajemen
+                        waktu di lingkungan profesional.</p>
                 </div>
             </div>
         </div>
@@ -162,7 +187,8 @@
         <h2 class="section-title">MARI BEKERJA SAMA</h2>
         <p>Tertarik untuk berkolaborasi atau mendiskusikan proyek baru?</p>
         <div class="contact-links">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=syariff01012001@gmail.com" target="_blank" class="btn btn-primary">KIRIM EMAIL</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=syariff01012001@gmail.com" target="_blank"
+                class="btn btn-primary">KIRIM EMAIL</a>
             <a href="https://github.com/syarif250505" target="_blank" class="btn btn-secondary">GITHUB PROFILE</a>
         </div>
     </section>
@@ -174,4 +200,5 @@
     <!-- MAIN JAVASCRIPT -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

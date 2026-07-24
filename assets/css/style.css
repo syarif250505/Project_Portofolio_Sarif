@@ -1,4 +1,4 @@
-/* RESET & VARIABLE */
+/* RESET & VARIABLES */
 * {
     margin: 0;
     padding: 0;
@@ -62,16 +62,31 @@ body {
     transition: 0.3s;
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:hover, 
+.navbar a.active {
     color: var(--accent-orange);
 }
 
 /* HERO SECTION */
 .hero-section {
-    padding: 180px 8% 60px;
-    min-height: 70vh;
+    padding: 100px 8% 40px; /* Jarak pas dari navbar fixed */
+    min-height: auto;
     display: flex;
     align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center ; /* Membuat teks di kiri otomatis berada pas di tengah tinggi foto */
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero-content {
+    flex: 1;
 }
 
 .subtitle {
@@ -99,6 +114,49 @@ body {
     color: var(--text-secondary);
     max-width: 600px;
     margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin-top: -100px;
+}
+
+/* Update pada bagian Gambar Hero */
+.hero-image img {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    margin-top: 0;
+    
+    /* MASKING FADE OUT BANWAH */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+    
+    /* EFEK GLOW ORANGE & ANIMASI MENGAPUNG */
+    filter: drop-shadow(0px 0px 30px rgba(255, 87, 34, 0.25));
+    animation: float 4s ease-in-out infinite; /* Animasi berulang tanpa henti */
+    transition: transform 0.3s ease;
+}
+
+/* KODE ANIMASI MENGAPUNG (KEYFRAMES) */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px); /* Bergerak naik 15px */
+    }
+    100% {
+        transform: translateY(0px);   /* Kembali ke posisi semula */
+    }
+}
+
+.hero-image img:hover {
+    transform: scale(1.02);
 }
 
 /* BUTTONS */
@@ -134,7 +192,7 @@ body {
     color: #000;
 }
 
-/* CARDS GALLERY (RONALDO STYLE) */
+/* CARDS GALLERY */
 .gallery-section {
     padding: 20px 8% 80px;
 }
@@ -157,6 +215,14 @@ body {
 .card-item:hover {
     transform: translateY(-8px);
     border-color: var(--accent-orange);
+}
+
+.card-item .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    display: block;
 }
 
 .card-img-placeholder {
@@ -185,7 +251,7 @@ body {
     font-size: 0.85rem;
 }
 
-/* GENERAL SECTIONS */
+/* GENERAL SECTIONS & COMPONENTS */
 .section-container {
     padding: 80px 8%;
     border-top: 1px solid #1a1a1a;
@@ -255,15 +321,7 @@ body {
     margin-top: 30px;
 }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    color: #555;
-    font-size: 0.8rem;
-    border-top: 1px solid #111;
-}
-
-/* TAB SWITCHER STYLING */
+/* TAB SWITCHER */
 .tab-container {
     display: flex;
     gap: 15px;
@@ -295,7 +353,6 @@ footer {
     background-color: var(--accent-orange);
 }
 
-/* TAB CONTENT DISPLAY */
 .tab-content {
     display: none;
 }
@@ -310,7 +367,7 @@ footer {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* TIMELINE STYLE */
+/* TIMELINE */
 .timeline {
     display: flex;
     flex-direction: column;
@@ -348,4 +405,21 @@ footer {
 .timeline-item p {
     color: var(--text-secondary);
     font-size: 0.85rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #555;
+    font-size: 0.8rem;
+    border-top: 1px solid #111;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 }
