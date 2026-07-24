@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARIF - Personal Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">SARIF</div>
+        <nav>
+            <ul>
+                <li><a href="#beranda" class="active">BERANDA</a></li>
+                <li><a href="#profil">PROFIL</a></li>
+                <li><a href="#proyek">PROYEK</a></li>
+                <li><a href="#pencapaian">PENCAPAIAN</a></li>
+                <li><a href="#kontak">KONTAK</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO / BERANDA SECTION -->
+    <section id="beranda" class="hero-section">
+        <div class="hero-content">
+            <span class="subtitle">FULLSTACK & MOBILE DEVELOPER</span>
+            <h1>BUILDING DIGITAL <br><span class="highlight">EXPERIENCES</span></h1>
+            <p>Fokus dalam pengembangan sistem backend scalable (Laravel), aplikasi mobile (Flutter), dan antarmuka web modern (React).</p>
+            <div class="hero-btns">
+                <a href="#proyek" class="btn btn-primary">LIHAT PROYEK &rarr;</a>
+                <a href="#kontak" class="btn btn-secondary">HUBUNGI SAYA</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDS GALLERY (STYLE RONALDO) -->
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <div class="card-item" data-tech="Laravel & PHP">
+                <div class="card-img-placeholder">BACKEND</div>
+                <div class="card-info">
+                    <h3>Laravel & PHP</h3>
+                    <p>API & Database Architecture</p>
+                </div>
+            </div>
+            <div class="card-item" data-tech="Flutter">
+                <div class="card-img-placeholder">MOBILE</div>
+                <div class="card-info">
+                    <h3>Flutter</h3>
+                    <p>Cross-Platform Apps</p>
+                </div>
+            </div>
+            <div class="card-item" data-tech="React.js">
+                <div class="card-img-placeholder">FRONTEND</div>
+                <div class="card-info">
+                    <h3>React.js</h3>
+                    <p>Interactive UI / UX</p>
+                </div>
+            </div>
+            <div class="card-item" data-tech="Python">
+                <div class="card-img-placeholder">PYTHON</div>
+                <div class="card-info">
+                    <h3>Data Processing</h3>
+                    <p>Desktop & Automation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- SEKSI PROFIL & RIWAYAT -->
+    <section id="profil" class="section-container">
+        <h2 class="section-title">PROFIL & RIWAYAT</h2>
+        
+        <div class="profil-text">
+            <p>Saya adalah seorang pengembang perangkat lunak berorientasi pada hasil dengan fokus di bidang Backend Engineering dan Mobile Development. Berpengalaman merancang sistem reservasi, kasir, hingga arsitektur API.</p>
+        </div>
+
+        <div class="tech-tags">
+            <span class="tag">Laravel</span>
+            <span class="tag">PHP</span>
+            <span class="tag">React.js</span>
+            <span class="tag">Flutter</span>
+            <span class="tag">Python</span>
+            <span class="tag">MySQL/SQLite</span>
+            <span class="tag">Git & GitHub</span>
+        </div>
+
+        <!-- TAB BUTTONS -->
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="openTab('pendidikan')">PENDIDIKAN</button>
+            <button class="tab-btn" onclick="openTab('pekerjaan')">PENGALAMAN KERJA</button>
+        </div>
+
+        <!-- TAB CONTENT 1: PENDIDIKAN -->
+        <div id="pendidikan" class="tab-content active-content">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2024 - Sekarang</span>
+                    <h3>Politeknik Negeri Bali (PNB)</h3>
+                    <p class="timeline-role">D4 Teknologi Rekayasa Perangkat Lunak (TRPL)</p>
+                    <p>Fokus pada pengembangan aplikasi web, mobile, arsitektur cloud, dan sistem basis data.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Alumni</span>
+                    <h3>SMKS Nurul Hidayah Koncer</h3>
+                    <p class="timeline-role">Teknik Komputer dan Jaringan (TKJ)</p>
+                    <p>Fondasi jaringan komputer serta hardware</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT 2: PEKERJAAN -->
+        <div id="pekerjaan" class="tab-content">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">Hospitality & Service Industry</span>
+                    <h3>Steward & Daily Worker</h3>
+                    <p class="timeline-role">Sofitel Bali & Beach Club</p>
+                    <p>Pengalaman kerja operasional harian yang mengasah kedisiplinan, kerja sama tim, dan manajemen waktu di lingkungan profesional.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SEKSI INFORMASI UTAMA: PROYEK -->
+    <section id="proyek" class="section-container">
+        <h2 class="section-title">PROYEK PILIHAN</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Mahagangga Valley Booking System</h3>
+                <p class="project-role">Backend Developer</p>
+                <p>Sistem pemesanan tiket berbasis web dengan integrasi backend Laravel yang handal.</p>
+            </div>
+            <div class="project-card">
+                <h3>Modern Desktop POS Application</h3>
+                <p class="project-role">Desktop App Developer</p>
+                <p>Aplikasi kasir modern berbasis Python (CustomTkinter) & SQLite.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKSI PENCAPAIAN / ORGANISASI -->
+    <section id="pencapaian" class="section-container">
+        <h2 class="section-title">PENCAPAIAN & ORGANISASI</h2>
+        <ul class="achievement-list">
+            <li><strong>HMJ Teknologi Informasi:</strong> Divisi Penalaran & Keilmuan</li>
+            <li><strong>PASTI Project:</strong> Ketua Panitia & Steering Committee</li>
+            <li><strong>Sertifikasi:</strong> Cisco ITN Final Assessment</li>
+        </ul>
+    </section>
+
+    <!-- SEKSI KONTAK -->
+    <section id="kontak" class="section-container contact-section">
+        <h2 class="section-title">MARI BEKERJA SAMA</h2>
+        <p>Tertarik untuk berkolaborasi atau mendiskusikan proyek baru?</p>
+        <div class="contact-links">
+            <a href="mailto:email@example.com" class="btn btn-primary">KIRIM EMAIL</a>
+            <a href="https://github.com/syarif250505" target="_blank" class="btn btn-secondary">GITHUB PROFILE</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sarif. Built with HTML, CSS, & JS</p>
+    </footer>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
