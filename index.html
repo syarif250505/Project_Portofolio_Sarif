@@ -24,7 +24,6 @@
             <ul>
                 <li><a href="#beranda" class="active">BERANDA</a></li>
                 <li><a href="#profil">PROFIL</a></li>
-                <li><a href="#proyek">PROYEK</a></li>
                 <li><a href="#pencapaian">PENCAPAIAN</a></li>
                 <li><a href="#kontak">KONTAK</a></li>
             </ul>
@@ -41,7 +40,7 @@
                 <p>Fokus dalam pengembangan sistem backend scalable (Laravel), aplikasi mobile (Flutter), dan antarmuka
                     web modern (React).</p>
                 <div class="hero-btns">
-                    <a href="#proyek" class="btn btn-primary">LIHAT PROYEK &rarr;</a>
+                    <a href="#profil" class="btn btn-primary">LIHAT PROYEK &rarr;</a>
                     <a href="#kontak" class="btn btn-secondary">HUBUNGI SAYA</a>
                 </div>
             </div>
@@ -96,9 +95,9 @@
         </div>
     </section>
 
-    <!-- SEKSI PROFIL & RIWAYAT -->
+    <!-- SEKSI PROFIL, PROYEK & RIWAYAT -->
     <section id="profil" class="section-container">
-        <h2 class="section-title">PROFIL & RIWAYAT</h2>
+        <h2 class="section-title">PROFIL & PORTFOLIO</h2>
 
         <div class="profil-text">
             <p>Saya adalah seorang pengembang perangkat lunak berorientasi pada hasil dengan fokus di bidang Backend
@@ -116,69 +115,65 @@
             <span class="tag">Git & GitHub</span>
         </div>
 
-        <!-- TAB BUTTONS -->
-        <div class="tab-container">
-            <button class="tab-btn active" onclick="openTab('pendidikan')">PENDIDIKAN</button>
-            <button class="tab-btn" onclick="openTab('pekerjaan')">PENGALAMAN KERJA</button>
-        </div>
+        <!-- LAYOUT 2 KOLOM (KIRI: PROYEK, KANAN: PENDIDIKAN) -->
+        <div class="two-column-layout">
+            
+            <!-- KOLOM KIRI: PROYEK TERPILIH -->
+            <div class="column-box">
+                <h3 class="column-subtitle">PROYEK TERPILIH</h3>
+                
+                <div class="info-card">
+                    <h4>Mahagangga Valley Booking System</h4>
+                    <span class="role-badge">Backend Developer</span>
+                    <p>Sistem pemesanan tiket berbasis web dengan integrasi backend Laravel yang handal.</p>
+                </div>
 
-        <!-- TAB CONTENT 1: PENDIDIKAN -->
-        <div id="pendidikan" class="tab-content active-content">
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="timeline-date">2024 - Sekarang</span>
-                    <h3>Politeknik Negeri Bali (PNB)</h3>
-                    <p class="timeline-role">D4 Teknologi Rekayasa Perangkat Lunak (TRPL)</p>
+                <div class="info-card">
+                    <h4>WEBLEARN (Sistem Pembelajaran Web Dasar Berbasis Mobile)</h4>
+                    <span class="role-badge">Mobile App Developer</span>
+                    <p>Aplikasi pembelajaran berbasis mobile dengan teknologi Flutter.</p>
+                </div>
+
+                <div class="info-card">
+                    <h4>Website Portfolio</h4>
+                    <span class="role-badge">Web Developer</span>
+                    <p>Website portofolio pribadi yang menampilkan proyek-proyek yang telah dikerjakan.</p>
+                </div>
+            </div>
+
+            <!-- KOLOM KANAN: PENDIDIKAN -->
+            <div class="column-box">
+                <h3 class="column-subtitle">RIWAYAT PENDIDIKAN</h3>
+                
+                <div class="info-card">
+                    <span class="date-badge">2024 - Sekarang</span>
+                    <h4>Politeknik Negeri Bali (PNB)</h4>
+                    <p class="role-text">D4 Teknologi Rekayasa Perangkat Lunak (TRPL)</p>
                     <p>Fokus pada pengembangan aplikasi web, mobile, arsitektur cloud, dan sistem basis data.</p>
                 </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">Alumni</span>
-                    <h3>SMKS Nurul Hidayah Koncer</h3>
-                    <p class="timeline-role">Teknik Komputer dan Jaringan (TKJ)</p>
-                    <p>Fondasi jaringan komputer serta hardware</p>
+
+                <div class="info-card">
+                    <span class="date-badge">Alumni</span>
+                    <h4>SMKS Nurul Hidayah Koncer</h4>
+                    <p class="role-text">Teknik Komputer dan Jaringan (TKJ)</p>
+                    <p>Fondasi jaringan komputer serta hardware.</p>
                 </div>
             </div>
+
         </div>
 
-        <!-- TAB CONTENT 2: PEKERJAAN -->
-        <div id="pekerjaan" class="tab-content">
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="timeline-date">Hospitality & Service Industry</span>
-                    <h3>Steward & Daily Worker</h3>
-                    <p class="timeline-role">Sofitel Bali & Beach Club</p>
-                    <p>Pengalaman kerja operasional harian yang mengasah kedisiplinan, kerja sama tim, dan manajemen
-                        waktu di lingkungan profesional.</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- SEKSI INFORMASI UTAMA: PROYEK -->
-    <section id="proyek" class="section-container">
-        <h2 class="section-title">PROYEK PILIHAN</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Mahagangga Valley Booking System</h3>
-                <p class="project-role">Backend Developer</p>
-                <p>Sistem pemesanan tiket berbasis web dengan integrasi backend Laravel yang handal.</p>
-            </div>
-            <div class="project-card">
-                <h3>Modern Desktop POS Application</h3>
-                <p class="project-role">Desktop App Developer</p>
-                <p>Aplikasi kasir modern berbasis Python (CustomTkinter) & SQLite.</p>
-            </div>
-        </div>
     </section>
 
     <!-- SEKSI PENCAPAIAN / ORGANISASI -->
     <section id="pencapaian" class="section-container">
         <h2 class="section-title">PENCAPAIAN & ORGANISASI</h2>
         <ul class="achievement-list">
+            <li><strong>OSIS SMKS Nurul Hidayah Koncer:</strong> Ketua</li>
             <li><strong>HMJ Teknologi Informasi:</strong> Divisi Penalaran & Keilmuan</li>
             <li><strong>PASTI Project:</strong> Ketua Panitia & Steering Committee</li>
+            <li><strong>CCIT (Creative Competition Information Technology):</strong> Juara 3 Lomba Programming</li>
             <li><strong>Sertifikasi:</strong> Cisco ITN Final Assessment</li>
+            <li><strong>Sertifikasi:</strong> AWS Certified Developer – Associate</li>
         </ul>
     </section>
 
