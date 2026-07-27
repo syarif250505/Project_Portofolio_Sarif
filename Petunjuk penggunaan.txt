@@ -1,0 +1,55 @@
+========================================================================
+PETUNJUK PENGGUNAAN WEBSITE PORTOFOLIO STATIS
+UAS CLOUD COMPUTING
+========================================================================
+
+Nama          : Sarif Hidayatullah
+NIM           : 2415354075
+Kelas         : C
+Program Studi : D4 Teknologi Rekayasa Perangkat Lunak (TRPL), Politeknik Negeri Bali
+
+------------------------------------------------------------------------
+1. CARA MENGAKSES WEBSITE SECARA ONLINE (DEPLOYED)
+------------------------------------------------------------------------
+Website ini telah di-deploy menggunakan layanan GitHub Pages dan dapat 
+diakses secara publik melalui tautan berikut:
+
+URL Publik : https://syarif250505.github.io/Project_Portofolio_Sarif/
+
+Langkah Akses:
+1. Buka web browser (Chrome, Edge, Firefox, Safari, dll.).
+2. Salin dan tempel (paste) URL publik di atas ke address bar browser.
+3. Tekan Enter untuk membuka halaman portofolio.
+
+
+------------------------------------------------------------------------
+2. CARA MENJALANKAN SOURCE CODE SECARA LOKAL
+------------------------------------------------------------------------
+Jika ingin menjalankan project secara lokal di komputer/laptop:
+
+Persyaratan System:
+- Web Browser
+
+Langkah-langkah:
+1. Ekstrak file .zip proyek ini jika masih terkompresi.
+2. Buka folder utama source code.
+3. Cari file bernama `index.html`.
+4. Klik ganda (double-click) pada file `index.html` tersebut.
+5. Website akan otomatis terbuka dan dapat diakses secara lokal.
+
+
+------------------------------------------------------------------------
+3. FITUR UTAMA & CARA PENGGUNAAN
+------------------------------------------------------------------------
+- Navigasi Halaman: Gunakan menu navbar di bagian atas untuk berpindah 
+  ke bagian Beranda, Profil, Proyek, dan Kontak.
+- Toggle Light/Dark Mode: Klik tombol ikon mode di bagian kanan navbar 
+  untuk mengubah tema tampilan antara mode gelap (Dark) dan terang (Light).
+- Tampilan Responsif: Tampilan disesuaikan otomatis untuk perangkat 
+  Desktop maupun Mobile.
+- Kirim Pesan / Email: Pada bagian Kontak, klik tombol kirim pesan untuk 
+  terhubung langsung ke email.
+
+========================================================================
+Terima Kasih
+========================================================================
